@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ "$EUID" -eq 0 ]; then
-    echo "Please do not run this script as root. It will ask for your password when needed."
+    echo "please do not run this script as root. it will ask for your password when needed."
     exit 1
 fi
 

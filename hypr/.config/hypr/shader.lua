@@ -1,7 +1,7 @@
 -- shader.lua
 -- Shader manager for Hyprland
 
-local home = os.getenv("HOME") or "/home/shoes"
+local home = os.getenv("HOME") or "~"
 local shader_dir = home .. "/.config/hypr/shaders/"
 
 local M = {}

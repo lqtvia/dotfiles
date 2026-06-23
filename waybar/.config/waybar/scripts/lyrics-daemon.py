@@ -18,7 +18,7 @@ import urllib.parse
 import socket
 
 CACHE_DIR = os.path.expanduser("~/.cache/mpd-lyrics")
-MUSIC_DIR = "/home/shoes/Music"
+MUSIC_DIR = os.path.expanduser("~/Music")
 CURRENT_FILE = "/tmp/mpd-lyric-current"
 MPD_HOST = os.environ.get("MPD_HOST", "127.0.0.1")
 MPD_PORT = int(os.environ.get("MPD_PORT", "6600"))

@@ -8,7 +8,7 @@ hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("bash -c 'notify-send \"opening firef
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("kitty -e yazi"))
 hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("kitty --class kittypad -e rmpc"))
 hl.bind(mainMod .. " + SHIFT + E", hl.dsp.exec_cmd("nautilus"))
-hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd("rofi -show drun -theme /home/shoes/.config/rofi/config.rasi"))
+hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd("rofi -show drun -theme ~/.config/rofi/config.rasi"))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + CTRL + E", hl.dsp.exec_cmd("loginctl terminate-session $XDG_SESSION_ID"))
 hl.bind(mainMod .. " + SHIFT + ALT + W", hl.dsp.exec_cmd("kitty -e nmtui"))

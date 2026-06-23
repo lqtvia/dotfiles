@@ -5,7 +5,7 @@
     address: "127.0.0.1:6600",
     password: None,
     theme: "matugen",
-    lyrics_dir: "/home/shoes/Music",
+    lyrics_dir: "~/Music",
     enable_config_hot_reload: true,
     cache_dir: None,
     on_song_change: None,

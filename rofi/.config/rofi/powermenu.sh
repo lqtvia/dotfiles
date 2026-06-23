@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-theme="/home/shoes/.config/rofi/config.rasi"
+theme="$HOME/.config/rofi/config.rasi"
 
 chosen=$(echo -e "Lock\nLogout\nSuspend\nReboot\nShutdown" | rofi -dmenu -i -theme "$theme" -p "Power")
 

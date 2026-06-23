@@ -1,4 +1,4 @@
-image = "/home/shoes/Pictures/Wallpapers/april.png"
+image = os.getenv("HOME") .. "/Pictures/Wallpapers/april.png"
 
 background = "rgba(131315ff)"
 
