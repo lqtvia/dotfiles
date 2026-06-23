@@ -13,7 +13,7 @@ if [[ ! $REPLY =~ ^[Yy]$ ]]; then
 fi
 
 echo "installing standard packages..."
-sudo pacman -S --needed --noconfirm base-devel git hyprland kitty fish rofi waybar swaync swayosd yazi micro fastfetch btop mpd rmpc zathura stow python firefox nautilus networkmanager wireplumber cliphist wl-clipboard playerctl qalculate-gtk grim slurp fd fzf xdg-utils
+sudo pacman -S --needed --noconfirm base-devel git hyprland kitty fish rofi waybar swaync swayosd yazi micro fastfetch btop mpd rmpc zathura stow python firefox nautilus networkmanager wireplumber cliphist wl-clipboard playerctl qalculate-gtk grim slurp fd fzf xdg-utils libnotify polkit-gnome network-manager-applet hypridle mpc mpd-mpris numlockx ffmpeg
 
 echo "checking for aur helper..."
 if command -v yay &> /dev/null; then
@@ -39,5 +39,11 @@ stow */ -t ~
 echo "copying wallpapers..."
 mkdir -p ~/Pictures/Wallpapers
 cp -r hypr/.config/hypr/modes/walls/* ~/Pictures/Wallpapers/ 2>/dev/null || true
+
+echo "setting default wallpaper..."
+mkdir -p ~/.config/hypr
+if [ ! -f ~/.config/hypr/current_wallpaper ]; then
+    ln -sf ~/Pictures/Wallpapers/night.jpg ~/.config/hypr/current_wallpaper
+fi
 
 echo "all done!"
