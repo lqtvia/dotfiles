@@ -8,7 +8,7 @@ window {
     background: alpha(@surface_container, 0.92);
     border: 1px solid @outline_variant;
     border-radius: 4px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     padding: 6px 8px;
     min-width: 80px;
 }
@@ -34,5 +34,5 @@ progress {
 label {
     color: @on_surface;
     font-family: "JetBrainsMono Nerd Font";
-    font-size:8px;
+    font-size: 8px;
 }

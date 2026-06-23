@@ -1,6 +1,6 @@
 ### my dotfiles
 
-js do ./install.sh to install simply
+do `chmod +x ./install.sh` then run `./install.sh` to  install
 
 ## keybinds
 
