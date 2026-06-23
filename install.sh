@@ -37,7 +37,7 @@ echo "stowing dotfiles..."
 stow */ -t ~
 
 echo "copying wallpapers..."
-mkdir -p ~/Pictures/wallpapers
-cp -r hypr/.config/hypr/walls/* ~/Pictures/wallpapers/ 2>/dev/null || true
+mkdir -p ~/Pictures/Wallpapers
+cp -r hypr/.config/hypr/modes/walls/* ~/Pictures/Wallpapers/ 2>/dev/null || true
 
 echo "all done!"
