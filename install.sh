@@ -13,7 +13,7 @@ if [[ ! $REPLY =~ ^[Yy]$ ]]; then
 fi
 
 echo "installing standard packages..."
-sudo pacman -S --needed --noconfirm base-devel git hyprland kitty fish rofi waybar swaync swayosd yazi micro fastfetch btop mpd rmpc zathura stow python firefox nautilus networkmanager wireplumber cliphist wl-clipboard playerctl qalculate-gtk grim slurp fd fzf xdg-utils libnotify polkit-gnome network-manager-applet hypridle mpc mpd-mpris numlockx ffmpeg
+sudo pacman -S --needed --noconfirm base-devel git hyprland kitty fish rofi waybar swaync swayosd yazi micro fastfetch btop mpd rmpc zathura stow python firefox nautilus networkmanager wireplumber cliphist wl-clipboard playerctl qalculate-gtk grim slurp fd fzf xdg-utils libnotify polkit-gnome network-manager-applet hypridle mpc mpd-mpris numlockx ffmpeg hyprlock brightnessctl
 
 echo "checking for aur helper..."
 if command -v yay &> /dev/null; then
