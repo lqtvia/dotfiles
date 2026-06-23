@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ "$EUID" -eq 0 ]; then
+    echo "Please do not run this script as root. It will ask for your password when needed."
+    exit 1
+fi
+
 read -p "install dotfiles? (y/n) " -n 1 -r
 echo
 if [[ ! $REPLY =~ ^[Yy]$ ]]; then
